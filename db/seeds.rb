@@ -3,13 +3,39 @@
 #
 # Examples:
 #
-  user = User.create({ name: "edward" }, { email: "edward.c.dickey@gmail.com" }, {password: "edward"})
+  user = User.create( name: "edward" ,  email: "edward.c.dickey@gmail.com" , password: "edward")
 
 
   Brand.create(name: "Nike", logo:"")
   Brand.create(name: "Gucci", logo:"")
   Brand.create(name: "lululemon", logo:"")
 
-  Product.create(name: "Free Run 3", price: 45, imageUrl: "", brand_id: 1)
+  Product.create(name: "Free Run 3", price: 45, imageUrl: "https://images.stockx.com/images/Nike-Free-Run-3-Pure-Platinum-GS.jpg?fit=fill&bg=FFFFFF&w=576&h=384&fm=avif&auto=compress&dpr=1&trim=color&updated_at=1626899837&q=57", brand_id: 1)
+  Product.create(name: "ABC Pant", price: 120, imageUrl: "https://images.lululemon.com/is/image/lululemon/LM5971S_033928_1", brand_id: 3)
+  Product.create(name: "Surge Jogger", price: 118, imageUrl: "https://images.lululemon.com/is/image/lululemon/LM5956S_048432_1?$product_tile$&wid=750&op_usm=0.8,1,10,0&fmt=webp&qlt=80,1&fit=constrain,0&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72", brand_id: 3)
+  Product.create(name: "At Ease Jogger", price: 128, imageUrl: "https://images.lululemon.com/is/image/lululemon/LM5AIYS_047759_1?$product_tile$&wid=750&op_usm=0.8,1,10,0&fmt=webp&qlt=80,1&fit=constrain,0&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72", brand_id: 3)
+  Product.create(name: "Fast and Free Lined Short 6in", price: 88, imageUrl: "https://images.lululemon.com/is/image/lululemon/LM7AU8S_017804_1?$product_tile$&wid=750&op_usm=0.8,1,10,0&fmt=webp&qlt=80,1&fit=constrain,0&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72", brand_id: 3)
+  Product.create(name: "Pace Breaker Linerless Short 7in", price: 68, imageUrl: "https://images.lululemon.com/is/image/lululemon/LM7AGXS_058323_1?$product_tile$&wid=750&op_usm=0.8,1,10,0&fmt=webp&qlt=80,1&fit=constrain,0&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72", brand_id: 3)
+  Product.create(name: "Licence to Train Linerless Short 7in", price: 88, imageUrl: "https://images.lululemon.com/is/image/lululemon/LM7AUKS_053564_1?$product_tile$&wid=750&op_usm=0.8,1,10,0&fmt=webp&qlt=80,1&fit=constrain,0&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72", brand_id: 3)
+  Product.create(name: "Everywhere Belt Bag", price: 38, imageUrl: "https://images.lululemon.com/is/image/lululemon/LU9AX2S_0001_1?$product_tile$&wid=750&op_usm=0.8,1,10,0&fmt=webp&qlt=80,1&fit=constrain,0&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72", brand_id: 3)
+  Product.create(name: "ABC Pant", price: 120, imageUrl: "", brand_id: 3)
+  Product.create(name: "Everyday Backpack", price: 98, imageUrl: "https://images.lululemon.com/is/image/lululemon/LU9ALTS_045657_1?$product_tile$&wid=750&op_usm=0.8,1,10,0&fmt=webp&qlt=80,1&fit=constrain,0&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72", brand_id: 3)
+  Product.create(name: "ABC Pant", price: 120, imageUrl: "", brand_id: 3)
+  Product.create(name: "ABC Pant", price: 120, imageUrl: "", brand_id: 3)
+  Product.create(name: "ABC Pant", price: 120, imageUrl: "", brand_id: 3)
+  Product.create(name: "ABC Pant", price: 120, imageUrl: "", brand_id: 3)
 
-  Review.create(product_id: 1, user_id:1, bio: "these Shoes suck, soles wear out too quick", rating: 3)
+  Review.create(product_id: 1, user_id:1, content: "these Shoes suck, soles wear out too quick", rating: 3)
+  Review.create(product_id: 2, user_id:1, content: "Great pants. Very compfy and stylish", rating: 8)
+  Review.create(product_id: 2, user_id:1, content: "Love these. wear them to flatiron every day", rating: 10)
+  Review.create(product_id: 3, user_id:1, content: "very good for working out", rating: 8)
+  Review.create(product_id: 3, user_id:1, content: "very breathable and great for lounging", rating: 9)
+  Review.create(product_id: 1, user_id:1, content: "these Shoes suck, soles wear out too quick", rating: 3)
+  Review.create(product_id: 1, user_id:1, content: "these Shoes suck, soles wear out too quick", rating: 3)
+  Review.create(product_id: 1, user_id:1, content: "these Shoes suck, soles wear out too quick", rating: 3)
+  Review.create(product_id: 1, user_id:1, content: "these Shoes suck, soles wear out too quick", rating: 3)
+  Review.create(product_id: 1, user_id:1, content: "these Shoes suck, soles wear out too quick", rating: 3)
+  Review.create(product_id: 1, user_id:1, content: "these Shoes suck, soles wear out too quick", rating: 3)
+  Review.create(product_id: 1, user_id:1, content: "these Shoes suck, soles wear out too quick", rating: 3)
+
+puts "done seeding"
