@@ -6,6 +6,7 @@
 .delivery-picture {
   width: 50px;
   margin-left: 36.5rem;
+  color:#42ddf5;
   
 }
 .restaurant-cards {
@@ -71,5 +72,26 @@
     text-align: center;
     /* margin-right: 5rem; */
   }
-    
+.card-button{
+  background-color:#42ddf5;
+  width: 180px;
+  color: white;
+  height:40px;
+  font-family:Arial;
+  font-size:11px;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+.logout-button {
+  background-color:#42ddf5;
+  width: 80px;
+  color: white;
+  height:20px;
+  font-family:Arial;
+  font-size:11px;
+  margin-top:10px;
+  margin-bottom:10px;
+  margin-right: 10px;
+}
+
 

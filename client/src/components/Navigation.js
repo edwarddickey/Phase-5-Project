@@ -21,7 +21,7 @@ function Navigation({ updateUser }) {
     <Nav>
       <NavH1>All Reviews</NavH1>
       <Menu>
-        <button onClick={handleLogOut}>Log Out</button>
+        <button className="logout-button" onClick={handleLogOut}>Log Out</button>
         {!menu ? (
           <div onClick={() => setMenu(!menu)}>
             <GiHamburgerMenu size={30} />
@@ -66,9 +66,11 @@ const Nav = styled.div`
 const Menu = styled.div`
   display: flex;
   align-items: center;
+  margin-right: 5px;
+  
   a {
     text-decoration: none;
-    color: black;
+    color :#42ddf5;
     font-family: Arial;
   }
   a:hover {

@@ -23,10 +23,14 @@ function ProductCard({ product }) {
               />
               <div className="card-text">
                 <h3>${price}</h3>
-                <Link to={`/products/${product.id}`}>
+               
+                <Link   to={`/products/${product.id}`}>
                   {" "}
-                  <h2>{name}</h2>
+                  <button className="card-button">
+                    {name}
+                    </button>
                 </Link>
+              
               </div>
             </div>
           </div>
