@@ -5,6 +5,8 @@ import Login from "./Login";
 import ProductDetail from "./ProductDetail";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import ProductsPage from "./ProductsPage";
+import { UserContext } from "./UserContext";
+import UserPage from "./UserPage";
 
 export default function App() {
   const [currentUser, setCurrentUser] = useState({});
@@ -29,13 +31,15 @@ export default function App() {
         {!currentUser ? (
           <Login error={"please login"} updateUser={updateUser} />
         ) : (
+          <UserContext.Provider value={{ currentUser, setCurrentUser }}>
           <Routes>
             <Route exact path="/" element={<ProductsPage />} />
             <Route path="/users/new" element={<Signup />} />
             <Route path="/products/:id" element={<ProductDetail />} />
-            {/* <Route path="/contact" element={
-                <Contact />
-            }/> */}
+           
+            <Route path="/users/:id" element={<UserPage />} />
+                    
+
             {/* <Route path="/about" element={
                 <About />
             }/> */}
@@ -43,6 +47,7 @@ export default function App() {
                 <Orders />
             }/> */}
           </Routes>
+          </UserContext.Provider>
         )}
       </Router>
     </div>

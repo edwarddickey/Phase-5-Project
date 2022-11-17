@@ -10,17 +10,17 @@ function ReviewCard({ review }) {
 
   const navigate = useNavigate();
   return (
-    <li className="individual-card">
-      <div className="container-card">
+    <li className="review-card">
+      <div className="review-card">
         <div className="row">
           <div className="col">
             <div className="card h-100">
               <div className="card-text">
                 <h3>{content}</h3>
-                <Link to={`/products/${review.id}}`}>
+                
                   {" "}
-                  <h2>{rating}</h2>
-                </Link>
+                  <h2>{rating}/10</h2>
+               
               </div>
             </div>
           </div>

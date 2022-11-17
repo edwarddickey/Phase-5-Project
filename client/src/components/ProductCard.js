@@ -22,7 +22,7 @@ function ProductCard({ product }) {
                 alt={product}
               />
               <div className="card-text">
-                <h3>{price}</h3>
+                <h3>${price}</h3>
                 <Link to={`/products/${product.id}`}>
                   {" "}
                   <h2>{name}</h2>

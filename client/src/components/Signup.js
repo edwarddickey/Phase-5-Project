@@ -7,11 +7,12 @@ function SignUp() {
     name: "",
     email: "",
     password: "",
+   
   });
   const [errors, setErrors] = useState([]);
   const history = useNavigate();
 
-  const { name, email, password } = formData;
+  const { name, email, password, } = formData;
 
   function onSubmit(e) {
     e.preventDefault();
@@ -19,6 +20,7 @@ function SignUp() {
       name,
       email,
       password,
+      
     };
 
     fetch(`/users`, {
@@ -56,6 +58,9 @@ function SignUp() {
           value={password}
           onChange={handleChange}
         />
+
+
+
 
         <input type="submit" value="Sign up!" />
       </Form>
