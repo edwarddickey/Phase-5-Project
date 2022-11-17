@@ -5,6 +5,7 @@
 }
 .delivery-picture {
   width: 50px;
+  margin-left: 34rem;
   
 }
 .restaurant-cards {
@@ -68,7 +69,7 @@
   }
   .sponsor-text {
     text-align: center;
-    margin-right: 10rem;
+    margin-right: 5rem;
   }
     
 
