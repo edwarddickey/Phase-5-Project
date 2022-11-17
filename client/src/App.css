@@ -5,7 +5,7 @@
 }
 .delivery-picture {
   width: 50px;
-  margin-left: 34rem;
+  margin-left: 36.5rem;
   
 }
 .restaurant-cards {
@@ -54,7 +54,7 @@
     list-style: none;
   }
   ul.cards {
-    padding-right: 17.4rem;
+    padding-right: 1.4rem;
   }
   .card-image {
     object-fit: cover;
@@ -69,7 +69,7 @@
   }
   .sponsor-text {
     text-align: center;
-    margin-right: 5rem;
+    /* margin-right: 5rem; */
   }
     
 

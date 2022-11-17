@@ -56,7 +56,7 @@ export default Navigation;
 const NavH1 = styled.h1`
   font-family: , cursive;
   display :flex;
-  margin-left :30rem;
+  margin-left :33rem;
 `;
 const Nav = styled.div`
   display: flex;
