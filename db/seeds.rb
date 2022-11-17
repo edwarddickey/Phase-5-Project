@@ -10,6 +10,12 @@
   Brand.create(name: "Gucci", logo:"")
   Brand.create(name: "lululemon", logo:"")
 
+
+  # Product.create(name: "Nike Blazer", price: 105, imageUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/95e18673-aaa2-47b4-93a7-452c176ad476/blazer-mid-77-vintage-mens-shoes-nw30B2.png", brand_id: 1)
+  # Product.create(name: "Air Jordan 1 Low", price: 110, imageUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/93fd72d0-516d-40af-8204-3879a7f10036/air-jordan-1-low-mens-shoes-hvs8vl.png", brand_id: 1)
+  # Product.create(name: "Nike Blazer", price: 105, imageUrl: "", brand_id: 1)
+  # Product.create(name: "Nike Blazer", price: 105, imageUrl: "", brand_id: 1)
+
   Product.create(name: "Free Run 3", price: 45, imageUrl: "https://images.stockx.com/images/Nike-Free-Run-3-Pure-Platinum-GS.jpg?fit=fill&bg=FFFFFF&w=576&h=384&fm=avif&auto=compress&dpr=1&trim=color&updated_at=1626899837&q=57", brand_id: 1)
   Product.create(name: "ABC Pant", price: 120, imageUrl: "https://pyxis.nymag.com/v1/imgs/68d/41c/779b791343d53fde78656af60fa122d97a-31-pants-ode.2x.rhorizontal.w700.jpg", brand_id: 3)
   Product.create(name: "Surge Jogger", price: 118, imageUrl: "https://images.lululemon.com/is/image/lululemon/LM5956S_048432_1?$product_tile$&wid=750&op_usm=0.8,1,10,0&fmt=webp&qlt=80,1&fit=constrain,0&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72", brand_id: 3)
